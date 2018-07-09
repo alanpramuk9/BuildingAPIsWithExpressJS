@@ -1,3 +1,8 @@
+##The backend web server (ExpressJS) manages the 'chirps' in a JSON file.
+##Using AJAX requests, users can create, edit, and delete chirps
+##Interestingly, this application does not use a database to store chirps but instead handles the CRUD application with pure Javascript
+
+
 ## REQUIRED
 
 * Setup an API with a project structure like:
