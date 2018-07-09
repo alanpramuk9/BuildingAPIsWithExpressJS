@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">            
+                <!-- Navbar text-->
+                <span class="navbar-text">
+                <h3>Chirps Message Board</h3>
+                </span>
+        </nav>
+        <br>
+        <div class="container">
+            <div class="jumbotron">
+                <h5>Technolgies Used: ExpressJS, Javascript, and Bootstrap </h5>      
+                <p>The backend web server (ExpressJS) manages the 'chirps' in a JSON file. </p>
+                <p>Using AJAX requests, users can create, edit, and delete chirps </p>
+                <p>Interestingly, this application does not use a database to store chirps but instead handles the CRUD application with pure Javascript</p>
+            </div>     
+    <div id='loadbtn'>
+        <button id='load' class='btn btn-primary' type="submit">Load Chirps</button>
+    
+    <div> 
+        <input type="text" name="user" placeholder='Username' id="user">
+        <input type="text" name="text" placeholder='Leave a chirp!' id="text">
+        <button id='post' class='btn btn-danger' type="submit">Create Chirp</button>
+    </div>
+</div> 
+            
+</div>            
+    <div class='container'>
+        <div class="chirpclass">
+        <div id='chirps'></div>
+    </div>
+    <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <!-- <input type="text" name="user" id="userUpdate">
+            <input type="text" name="text" id="textUpdate">
+            <button id=`z${key}` type="submit">Update Chirp</button> -->
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
